@@ -1,52 +1,100 @@
-import React from 'react'
-import { Link } from 'react-router-dom'  
-import img3 from './images/frag.jpeg' 
+import React from "react";
+import { Link } from "react-router-dom";
+import img3 from "./images/frag.jpeg";
+import img4 from "./images/movieee.png";
+import img5 from "./images/wether.png";
+
 const Project = () => {
+  const projects = [
+    {
+      id: 1,
+      img: img3,
+      title: "Fragranzia",
+      subtitle: "Chemistry and History",
+      desc: "Explore thousands of movies across genres, track your favourites, watch trailers, and dive into cinematic history—all in one place.",
+      link: "https://precious-chimera-c2fc09.netlify.app/ ",
+    },
+    {
+      id: 2,
+      img: img4,
+      title: "Movie App",
+      subtitle: "Discover and Stream Films",
+      desc: "An in-depth study exploring perfume chemistry, essential oils, fixatives, and the evolution of fragrances through history.",
+      link: "https://moviess-klpw.vercel.app/",
+    },
+    {
+      id: 3,
+      img: img5,
+      title: "Weather App",
+      subtitle: "Realtime Forecast & Climate Updates",
+      desc: "A simple and interactive weather application that provides real-time temperature, humidity, wind speed, and detailed forecasts for any city using live API data.",
+      link: "https://weather-2qcq.vercel.app/",
+    },
+  ];
+
   return (
-    <div id='project'>
-      
-      <br /><br /><br /><br /><br /><br />
-        <h1 className='hover:text-black hover:scale-105 transition-all duration-300 cursor-pointer text-center font-serif text-4xl'>
-          PROJECT
+    <div
+      id="project"
+      className="py-28 px-6 bg-black text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-black/50 to-black opacity-90"></div>
+      <div className="relative z-10 text-center">
+        <h1
+          className="text-6xl md:text-5xl font-extrabold tracking-wide 
+                     bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
+                     text-transparent bg-clip-text drop-shadow-lg 
+                     mb-4" >PROJECTS
         </h1>
-        <div className='border-b-4 border-purple-700 w-9 mx-auto mt-2 '></div><br></br>
-        <br />
-     <h6 className="text-center font-medium">
-  Here you will find some of the personal and client projects that I created with each project <br />
-  containing its own case study.
-</h6>
-<br /><br />
 
-<div className=" flex items-center justify-start h-screen bg-white">
-  <img className="h-[500px] ml-36 w-[700px]"src={img3} alt="Project Visual"/>
-  <div className="flex flex-col items-start ml-28 space-y-12 max-w-md">
-    <h5 className="text-black rounded font-normal text-lg">
-      Fragranzia does not exist as a software or an application for organizing 
-      images and notes. Your query likely refers to a digital system for organizing images of perfumes or
-      scents along with their corresponding fragrance notes.<br />
-      You can do this on your laptop using built-in features or dedicated apps.
-    </h5>
-    <button className="w-44 h-14 font-serif text-white bg-purple-700 rounded">
-      Case Study
-    </button>
-  </div>
-</div><br></br>
-<br /><br />
-<div className=" flex items-center justify-start h-screen bg-white">
-  <img className="h-[600px] ml-36 w-[700px]"src={img3} alt="Project Visual"/>
-  <div className="flex flex-col items-start ml-28 space-y-12 max-w-md">
-    <h5 className="text-black rounded font-normal text-lg">
-      Perfume is a mixture of fragrant essential oils or aroma compounds, <br></br>fixatives and solvents, usually in liquid form, used to give the human body, animals, food, objects,<br></br> and living-spaces an agreeable scent.[1] Perfumes can be defined as substances that emit and diffuse a pleasant and fragrant odor. <br></br>They consist of artificial mixtures of aromatic chemicals and essential oils. The 1939 Nobel Laureate for<br></br> Chemistry, Leopold Ružička stated in 1945 that "right from the earliest days of scientific chemistry up to the present time,<br></br> perfumes have substantially contributed to the development of organic chemistry as regards methods, systematic <br></br>classification, and theory."
-    </h5>
-    <button className="w-44 h-14 font-serif text-white bg-purple-700 rounded">
-      Case Study
-    </button>
-  </div>
-</div><br></br><br></br>
+        <p className="mt-6 text-gray-300 text-lg max-w-2xl mx-auto">
+          A selection of projects showcasing creativity, functionality, and
+          strong UI/UX concepts. Each comes with its own detailed case study.
+        </p>
+      </div>
 
-    
+      <div className="relative z-10 mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="group bg-white/10 backdrop-blur-xl border border-white/20 
+                       rounded-3xl shadow-xl overflow-hidden 
+                       hover:scale-105 hover:shadow-2xl transition-all duration-500">
+            <div className="overflow-hidden rounded-t-3xl">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"/>
+            </div>
+
+            <div className="p-8 space-y-4">
+              <h2 className="text-3xl font-bold text-blue-300">
+                {project.title}
+              </h2>
+
+              <h3 className="text-md italic text-gray-400">
+                {project.subtitle}
+              </h3>
+
+              <p className="text-gray-300 leading-relaxed text-sm">
+                {project.desc}
+              </p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer">
+                <button
+                  className="w-full mt-4 py-3 text-white font-semibold rounded-xl 
+                             bg-gradient-to-r from-blue-500 to-purple-500 
+                             hover:scale-105 shadow-lg hover:shadow-2xl 
+                             transition">
+                  View Case Study
+                </button>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
