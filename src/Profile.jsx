@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import img from './sandra2.jpeg' ;
 
 
