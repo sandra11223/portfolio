@@ -76,8 +76,7 @@ const Contact = () => {
             <div className="flex md:justify-end justify-center gap-6 text-3xl">
               <a className="hover:text-blue-400 transition"><FaLinkedin /></a>
               <a className="hover:text-gray-300 transition"><FaGithub /></a>
-              {/* <a className="hover:text-blue-400 transition"><FaTwitter /></a>
-              <a className="hover:text-red-500 transition"><FaYoutube /></a> */}
+             
             </div>
           </div>
 

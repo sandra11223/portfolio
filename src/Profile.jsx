@@ -58,21 +58,6 @@ const Profile = () => {
             LinkedIn
           </span>
         </a>
-
-        {/* <a href="https://twitter.com" target="_blank" rel="noreferrer"
-          className="group relative text-blue-300 hover:scale-125 transition transform">
-          <FaTwitter />
-          <span className="absolute left-12 top-1/2 -translate-y-1/2 bg-white text-black text-sm px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
-            Twitter
-          </span>
-        </a> */}
-
-        {/* <a href="https://youtube.com" target="_blank" rel="noreferrer"
-          className="group relative text-red-500 hover:scale-125 transition transform">
-          <IoLogoYoutube />
-          <span className="absolute left-12 top-1/2 -translate-y-1/2 bg-white text-black text-sm px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
-            YouTube
-          </span> */}
         
 
 
