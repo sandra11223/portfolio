@@ -1,6 +1,5 @@
 import React from "react";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io5";
 import img from './sandra2.jpeg' ;
 
 
@@ -75,7 +74,7 @@ const Profile = () => {
             YouTube
           </span> */}
         
-        
+
 
         <a href="https://github.com" target="_blank" rel="noreferrer"
           className="group relative text-gray-300 hover:scale-125 transition transform">
