@@ -27,9 +27,24 @@ const About = () => {
 
           <p className="text-gray-300 leading-relaxed mb-5">
             I also create helpful content related to web development on 
-            <a className="text-blue-300 font-semibold hover:underline ml-1" href="#"> LinkedIn</a> 
-            and 
-            <a className="text-blue-300 font-semibold hover:underline ml-1" href="#"> Instagram</a>.
+            <a
+  href="https://www.linkedin.com/in/your-linkedin-username"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-300 font-semibold hover:underline ml-1"
+>
+  LinkedIn
+</a>
+and
+<a
+  href="https://www.instagram.com/your-instagram-username"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-300 font-semibold hover:underline ml-1"
+>
+  Instagram
+</a>
+
           </p>
 
           <p className="text-gray-300 leading-relaxed mb-8">

@@ -74,9 +74,24 @@ const Contact = () => {
           <div className="md:text-right text-center">
             <h3 className="text-xl font-bold mb-4 tracking-wide">FOLLOW ME</h3>
             <div className="flex md:justify-end justify-center gap-6 text-3xl">
-              <a className="hover:text-blue-400 transition"><FaLinkedin /></a>
-              <a className="hover:text-gray-300 transition"><FaGithub /></a>
-             
+              <a
+  href="https://www.linkedin.com/in/your-linkedin-username"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-blue-400 transition"
+>
+  <FaLinkedin />
+</a>
+
+<a
+  href="https://github.com/your-github-username"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gray-300 transition"
+>
+  <FaGithub />
+</a>
+
             </div>
           </div>
 
