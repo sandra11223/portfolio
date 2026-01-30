@@ -37,7 +37,7 @@ const Profile = () => {
 </h1>
 
 <p className="text-lg md:text-2xl text-gray-300 max-w-3xl text-center leading-relaxed relative z-10">
-  A passionate Web Developer from Kerala, India 🌍.  
+  A passionate Web Developer from Kerala, India .  
   I specialize in building modern, responsive UIs with React and TailwindCSS,  
   and love turning creative ideas into functional digital experiences.  
   When I’m not coding, I’m exploring design trends and learning new tech.
